@@ -1,0 +1,27 @@
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:2% 5% 2% 5%;
+}
+.nav-header{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
+.nav-items{
+  display: flex;
+  list-style: none;
+}
+
+.nav-item{
+  font-size: 0.9rem;
+  margin: 0.8rem;
+  a{
+    text-decoration: none;
+    color: black;
+  }
+}
