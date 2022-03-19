@@ -1,0 +1,49 @@
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+
+  opacity: 0;
+  transition: 1s ease;
+  p{
+    font-size: 1.5rem;
+  }
+}
+.fade-in{
+  opacity: 1;
+}
+.contact-form{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 50px;
+}
+.form-section{
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0 0 0;
+}
+
+input,textarea{
+  margin-top: 0.2rem;
+  background-color: rgb(250, 250, 250);
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+textarea{
+  height: 10rem;
+  resize: none;
+}
+
+.form-submit-btn{
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  border: 2px solid black;
+  width: 100px;
+  cursor: pointer;
+}

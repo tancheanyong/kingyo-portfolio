@@ -1,4 +1,5 @@
 import { RiInstagramLine } from "react-icons/ri";
+import {GiCirclingFish} from 'react-icons/gi'
 import "../scss/Navbar.scss";
 import { Link } from "react-router-dom";
 
@@ -6,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <header className="nav-header">
-        <Link to='/'>Kingo Art</Link>
+        <Link to='/'><span>Kingo Art</span><GiCirclingFish /></Link>
       </header>
       <ul className="nav-items">
         <li className="nav-item">

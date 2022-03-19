@@ -2,7 +2,15 @@
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px
+  gap: 10px;
+
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: 1s ease;
+}
+.fade-in{
+  opacity: 1;
+  transform: translate(0);
 }
 .col{
   width: 100%;

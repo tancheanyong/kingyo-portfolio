@@ -1,6 +1,12 @@
 .about-container{
   padding: 50px 5% 50px 5%;
   position: relative;
+
+  opacity: 0;
+  transition: 1s ease;
+}
+.fade-in{
+  opacity: 1;
 }
 .about-img-container{
   position: relative;
