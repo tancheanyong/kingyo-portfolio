@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import "../../scss/Gallery.scss";
 import {listOfArtworks} from '../../listOfArtworks'
 
-
 function Gallery() {
   const [row1, setRow1] = useState([]);
   const [row2, setRow2] = useState([]);
   const [row3, setRow3] = useState([]);
   useEffect(() => {
     let result: any = [];
+    // split the array of artworks into three arrays, to fill up three vertical columns
     for (let i = 3; i > 0; i--) {
       result.push(
         listOfArtworks.splice(0, Math.ceil(listOfArtworks.length / i))
@@ -17,6 +17,7 @@ function Gallery() {
     setRow1(result[0]);
     setRow2(result[1]);
     setRow3(result[2]);
+
   }, []);
 
   return (
