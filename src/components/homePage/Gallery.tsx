@@ -6,17 +6,23 @@ function Gallery() {
   const [row1, setRow1] = useState([]);
   const [row2, setRow2] = useState([]);
   const [row3, setRow3] = useState([]);
+  
   useEffect(() => {
+    //Deep copy listOfArtworks to arrToBeSpliced, as splice will destroy the array it operates on, redeclaring arrToBeSpliced means there will always be an array to be spliced everytime we re-render this page. 
+    let arrToBeSpliced:any=[];
+    listOfArtworks.map(obj=>arrToBeSpliced.push(Object.assign({},obj)));
+
     let result: any = [];
     // split the array of artworks into three arrays, to fill up three vertical columns
     for (let i = 3; i > 0; i--) {
       result.push(
-        listOfArtworks.splice(0, Math.ceil(listOfArtworks.length / i))
+        arrToBeSpliced.splice(0, Math.ceil(arrToBeSpliced.length / i))
       );
     }
     setRow1(result[0]);
     setRow2(result[1]);
     setRow3(result[2]);
+    
 
   }, []);
 
