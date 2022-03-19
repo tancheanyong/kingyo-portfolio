@@ -1,5 +1,5 @@
 import { AiOutlineArrowDown } from "react-icons/ai";
-import '../../scss/Header.scss'
+import '../../scss/homePage/Header.scss'
 export default function Header() {
   return (
     <section className="header-section">

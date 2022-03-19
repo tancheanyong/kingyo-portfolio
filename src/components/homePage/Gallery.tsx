@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../../scss/Gallery.scss";
+import "../../scss/homePage/Gallery.scss";
 import {listOfArtworks} from '../../listOfArtworks'
 
 function Gallery() {

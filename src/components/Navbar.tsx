@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <header className="nav-header">
-        <a href="#">Kingo Art</a>
+        <Link to='/'>Kingo Art</Link>
       </header>
       <ul className="nav-items">
         <li className="nav-item">
