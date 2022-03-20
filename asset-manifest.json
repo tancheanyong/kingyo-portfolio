@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kingyo-portfolio/static/css/main.7730031d.css",
-    "main.js": "/kingyo-portfolio/static/js/main.dc15d500.js",
+    "main.css": "/kingyo-portfolio/static/css/main.68f09942.css",
+    "main.js": "/kingyo-portfolio/static/js/main.0b328d7f.js",
     "static/media/img (8).jpg": "/kingyo-portfolio/static/media/img (8).40482f967a3bfeead219.jpg",
     "static/media/img (5).jpg": "/kingyo-portfolio/static/media/img (5).a7079be3d53b73627c08.jpg",
     "static/media/img (6).jpg": "/kingyo-portfolio/static/media/img (6).9d79ed1a928dac819b24.jpg",
@@ -9,16 +9,16 @@
     "static/media/img (10).jpg": "/kingyo-portfolio/static/media/img (10).0d741246c07dc35714b2.jpg",
     "static/media/img(1).jpg": "/kingyo-portfolio/static/media/img(1).c48e76688c7b3603a3e9.jpg",
     "static/media/self-portrait.jpg": "/kingyo-portfolio/static/media/self-portrait.a7371695885c222fefda.jpg",
+    "static/media/img (9).jpg": "/kingyo-portfolio/static/media/img (9).cab612bcca22f3a439bd.jpg",
     "static/media/img (4).jpg": "/kingyo-portfolio/static/media/img (4).1ffee4f3801100a64022.jpg",
     "static/media/img (3).jpg": "/kingyo-portfolio/static/media/img (3).6f92b79990842deab871.jpg",
-    "static/media/img (9).jpg": "/kingyo-portfolio/static/media/img (9).6f92b79990842deab871.jpg",
     "static/media/img (7).jpg": "/kingyo-portfolio/static/media/img (7).6126f512dd757b8314b8.jpg",
     "index.html": "/kingyo-portfolio/index.html",
-    "main.7730031d.css.map": "/kingyo-portfolio/static/css/main.7730031d.css.map",
-    "main.dc15d500.js.map": "/kingyo-portfolio/static/js/main.dc15d500.js.map"
+    "main.68f09942.css.map": "/kingyo-portfolio/static/css/main.68f09942.css.map",
+    "main.0b328d7f.js.map": "/kingyo-portfolio/static/js/main.0b328d7f.js.map"
   },
   "entrypoints": [
-    "static/css/main.7730031d.css",
-    "static/js/main.dc15d500.js"
+    "static/css/main.68f09942.css",
+    "static/js/main.0b328d7f.js"
   ]
 }
