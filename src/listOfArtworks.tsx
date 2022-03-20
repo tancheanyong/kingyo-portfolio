@@ -39,4 +39,14 @@ export const listOfArtworks = [
     img: require("./images/img (8).jpg"),
     text: "eigth image",
   },
+  {
+    key: 9,
+    img: require("./images/img (9).jpg"),
+    text: "ninth image",
+  },
+  {
+    key: 10,
+    img: require("./images/img (10).jpg"),
+    text: "tenth image",
+  },
 ]
