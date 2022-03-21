@@ -1,29 +1,32 @@
-.header-section{
+.header-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:5rem 0 5rem 0;
-  
+  margin: 5rem 0 5rem 0;
+  text-align: center;
   opacity: 0;
   transition: 1s ease;
 }
-.fade-in{
+.fade-in {
   opacity: 1;
 }
 
-.sub-header-1{
+.sub-header-1 {
   font-size: 1.2rem;
   font-weight: 300;
   display: flex;
   align-items: center;
 }
-.sub-header-2{
+.sub-header-2 {
   font-size: 1.7rem;
   margin: 2rem;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
-@media screen and (max-width:1000px){
-  
+@media screen and (max-width: 900px) {
+  .header-section {
+    margin: 4rem 0;
+  }
 }
