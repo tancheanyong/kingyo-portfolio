@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kingyo-portfolio/static/css/main.68f09942.css",
-    "main.js": "/kingyo-portfolio/static/js/main.0b328d7f.js",
+    "main.css": "/kingyo-portfolio/static/css/main.96b6fe48.css",
+    "main.js": "/kingyo-portfolio/static/js/main.f325ef9d.js",
     "static/media/img (8).jpg": "/kingyo-portfolio/static/media/img (8).40482f967a3bfeead219.jpg",
     "static/media/img (5).jpg": "/kingyo-portfolio/static/media/img (5).a7079be3d53b73627c08.jpg",
     "static/media/img (6).jpg": "/kingyo-portfolio/static/media/img (6).9d79ed1a928dac819b24.jpg",
@@ -14,11 +14,11 @@
     "static/media/img (3).jpg": "/kingyo-portfolio/static/media/img (3).6f92b79990842deab871.jpg",
     "static/media/img (7).jpg": "/kingyo-portfolio/static/media/img (7).6126f512dd757b8314b8.jpg",
     "index.html": "/kingyo-portfolio/index.html",
-    "main.68f09942.css.map": "/kingyo-portfolio/static/css/main.68f09942.css.map",
-    "main.0b328d7f.js.map": "/kingyo-portfolio/static/js/main.0b328d7f.js.map"
+    "main.96b6fe48.css.map": "/kingyo-portfolio/static/css/main.96b6fe48.css.map",
+    "main.f325ef9d.js.map": "/kingyo-portfolio/static/js/main.f325ef9d.js.map"
   },
   "entrypoints": [
-    "static/css/main.68f09942.css",
-    "static/js/main.0b328d7f.js"
+    "static/css/main.96b6fe48.css",
+    "static/js/main.f325ef9d.js"
   ]
 }
