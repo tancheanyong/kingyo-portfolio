@@ -6,11 +6,18 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [navOpen, setNavOpen] = useState(false);
+  const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", () => setWindowWidth(window.innerWidth));
+    windowWidth>900?setSideMenuOpen(false):setSideMenuOpen(sideMenuOpen);
   }, [windowWidth]);
+
+  useEffect(() => {
+    sideMenuOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "visible");
+  }, [sideMenuOpen]);
 
   return (
     <nav className="navbar">
@@ -38,10 +45,39 @@ function Navbar() {
           </li>
         </ul>
       ) : (
-        <button className={navOpen?'hamburger-btn hamburger-open':'hamburger-btn'} onClick={()=>navOpen?setNavOpen(false):setNavOpen(true)}>
+        <button
+          className={
+            sideMenuOpen ? "hamburger-btn hamburger-open" : "hamburger-btn"
+          }
+          onClick={() =>
+            sideMenuOpen ? setSideMenuOpen(false) : setSideMenuOpen(true)
+          }
+        >
           <div className="hamburger-btn-line"></div>
         </button>
       )}
+      <ul className={sideMenuOpen ? "sideMenu" : "sideMenu closed"}>
+        <li className="nav-item">
+          <Link onClick={() => setSideMenuOpen(false)} to="/">
+            Home
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link onClick={() => setSideMenuOpen(false)} to="/About">
+            About
+          </Link>
+        </li>
+        <li className="nav-item">
+          <Link onClick={() => setSideMenuOpen(false)} to="/Contact">
+            Contact
+          </Link>
+        </li>
+        <li className="nav-item">
+          <a onClick={() => setSideMenuOpen(false)} href="#">
+            <RiInstagramLine />
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }

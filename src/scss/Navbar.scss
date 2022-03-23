@@ -40,13 +40,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0 4%;
+  margin: 0 4%;
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
   transition: all 1s ease;
   border: none;
   background: none;
+  z-index: 10;
 }
 .hamburger-btn-line {
   width: 2rem;
@@ -56,28 +57,64 @@
 }
 .hamburger-btn-line::before,
 .hamburger-btn-line::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2rem;
   height: 1px;
   background: black;
   transition: all 1s ease;
 }
-.hamburger-btn-line::before{
-  transform: translate(-50%,-0.5rem);
+.hamburger-btn-line::before {
+  transform: translate(-50%, -0.5rem);
 }
-.hamburger-btn-line::after{
-  transform: translate(-50%,0.5rem);
+.hamburger-btn-line::after {
+  transform: translate(-50%, 0.5rem);
 }
-.hamburger-open .hamburger-btn-line{
+.hamburger-open{
+  position: fixed;
+  right: 0;
+}
+.hamburger-open.App{
+  overflow: hidden;
+}
+.hamburger-open .hamburger-btn-line {
   transform: translateX(-2rem);
   background: transparent;
 }
-.hamburger-btn.hamburger-open .hamburger-btn-line::before{
-  transform: rotate(45deg) translate(0.75rem,-0.75rem);
+.hamburger-btn.hamburger-open .hamburger-btn-line::before {
+  transform: rotate(45deg) translate(0.75rem, -0.75rem);
 }
-.hamburger-btn.hamburger-open .hamburger-btn-line::after{
-  transform: rotate(-45deg) translate(0.75rem,0.75rem);
+.hamburger-btn.hamburger-open .hamburger-btn-line::after {
+  transform: rotate(-45deg) translate(0.75rem, 0.75rem);
+}
+// Side Menu
+.sideMenu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  z-index: 2;
+  opacity: 1;
+  transition: 0.4s ease;
+  .nav-item {
+    text-decoration: none;
+    a {
+      color: black;
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+  }
+}
+.closed{
+  visibility: hidden;
+  opacity: 0;
 }
 @media screen and (max-width: 900px) {
   .nav-header {

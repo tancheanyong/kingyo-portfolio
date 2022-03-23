@@ -9,6 +9,7 @@ import Contact from "./components/contactPage/Contact";
 function App() {
   return (
     <div className="App">
+      {/* React router dom works with the actual dom, so it's more optimize */}
       <Router basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
